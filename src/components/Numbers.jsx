@@ -3,6 +3,7 @@ import Number from "./Number";
 
 export default function Numbers({ evenNumbers, setEvenNumbers }) {
   const nums = [];
+
   for (let i = 0; i <= 10; i++) {
     if (i % 2 === 0) {
       nums.push(i);
@@ -21,6 +22,13 @@ export default function Numbers({ evenNumbers, setEvenNumbers }) {
         }}
       >
         click
+      </button>
+      <button
+        onClick={() => {
+          setEvenNumbers();
+        }}
+      >
+        reset
       </button>
     </div>
   );
